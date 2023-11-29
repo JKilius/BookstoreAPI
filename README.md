@@ -84,6 +84,47 @@
 
 #### Delete books 
 
+````http
+  DELETE /BookStore/v1/Books
+````
+
+| Bearer Token | Type     | Description                    |
+| :-------- | :------- | :-------------------------------- |
+| `Token`    | `string` | **Required**. Valid Bearer token |
+
+| Parameters | Type     | Description                       |
+| :-------- | :------- | :-------------------------------- |
+| `UserId`    | `string` | **Required**. Valid user id to delete account |
+
+#### Get specific book information
+
+````https
+  GET /BookStore/v1/Book
+````
+
+| Bearer Token | Type     | Description                    |
+| :-------- | :------- | :-------------------------------- |
+| `Token`    | `string` | **Required**. Valid Bearer token |
+
+| Parameters | Type     | Description                       |
+| :-------- | :------- | :-------------------------------- |
+| `UserId`    | `string` | **Required**. Valid book ISBN to lookup book |
+
+#### Delete specific book user has
+
+````http
+  DELETE /BookStore/v1/Book
+````
+
+| Bearer Token | Type     | Description                    |
+| :-------- | :------- | :-------------------------------- |
+| `Token`    | `string` | **Required**. Valid Bearer token |
+
+| Object | Type     | Description                       |
+| :-------- | :------- | :-------------------------------- |
+| `isbn`    | `string` | **Required**. Valid book ISBN to delete book |
+| `useId`   | `string` | **Required**. Valid user ID is required |
+
 #### Update one book
 
 ```http 
@@ -104,13 +145,8 @@ Authentification Bearer token
 | :-------- | :------- | :-------------------------------- |
 | `useId`   | `string` | **Required**. Valid user ID is required |
 | `isbn`    | `string` | **Required**. Valid book ISBN to update book |
-
-```http
   
 
 ## Demo 
 
 - [Docs: BookstoreAPI](https://bookstore.toolsqa.com/swagger)
-
-<!--Nuotraukos paemimui is local repository>
-![image name](../)
