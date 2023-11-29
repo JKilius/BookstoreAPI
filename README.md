@@ -99,7 +99,7 @@
 #### Get specific book information
 
 ````https
-  GET /BookStore/v1/Book
+  GET /BookStore/v1/Books
 ````
 
 | Bearer Token | Type     | Description                    |
