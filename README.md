@@ -27,7 +27,7 @@
 | `userName`| `string` | **Required**. User Name    |
 | `password`| `string` | **Required**. User password |
 
-#### Genetarte Token
+#### Generate Token
 
 ```http
   POST /Account/v1/GenerateToken
